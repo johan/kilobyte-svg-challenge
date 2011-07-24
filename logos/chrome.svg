@@ -1,45 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
  <defs>
-  <linearGradient id="blueFade" x2="0%" y2="100%">
-   <stop stop-color="#81b4e0" offset="0"/>
+  <linearGradient id="b" x2="0" y2="100%">
+   <stop stop-color="#81b4e0"/>
    <stop stop-color="#0c5a94" offset="1"/>
   </linearGradient>
-  <linearGradient id="redFade" y2="107" gradientUnits="userSpaceOnUse" x2="128" y1="16" x1="128">
-   <stop stop-color="#f06b59" offset="0"/>
+  <linearGradient id="r" x2="0" x1="0" y1="16" y2="107" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#f06b59"/>
    <stop stop-color="#df2227" offset="1"/>
   </linearGradient>
-  <linearGradient id="greenFade" y2="149" gradientUnits="userSpaceOnUse" x2="118" y1="225" x1="72">
-   <stop stop-color="#388b41" offset="0"/>
+  <linearGradient id="g" x1="72" x2="118" y1="225" y2="149" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#388b41"/>
    <stop stop-color="#4cb749" offset="1"/>
   </linearGradient>
-  <linearGradient id="yellowFade" y2="102" gradientUnits="userSpaceOnUse" x2="138" y1="220" x1="187">
-   <stop stop-color="#e4b022" offset="0"/>
+  <linearGradient id="y" x1="187" x2="138" y1="220" y2="102" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#e4b022"/>
    <stop stop-color="#fcd209" offset=".3"/>
   </linearGradient>
-  <linearGradient id="redShadow" y2="60" gradientUnits="userSpaceOnUse" x2="80" y1="140" x1="80">
-   <stop stop-opacity=".15" offset="0"/>
+  <linearGradient id="R" x1="0" x2="0" y1="140" y2="60" gradientUnits="userSpaceOnUse">
+   <stop stop-opacity=".15"/>
    <stop stop-opacity=".06" offset=".3"/>
    <stop stop-opacity=".03" offset="1"/>
   </linearGradient>
-  <linearGradient id="greenShadow" y2="217" gradientUnits="userSpaceOnUse" x2="109" y1="161" x1="164">
-   <stop stop-opacity=".15" offset="0"/>
+  <linearGradient id="G" x1="164" x2="109" y1="161" y2="217" gradientUnits="userSpaceOnUse">
+   <stop stop-opacity=".15"/>
    <stop stop-opacity=".06" offset=".3"/>
    <stop stop-opacity=".03" offset="1"/>
   </linearGradient>
-  <linearGradient id="yellowShadow" y2="100" gradientUnits="userSpaceOnUse" x2="147" y1="179" x1="139">
-   <stop stop-opacity=".15" offset="0"/>
+  <linearGradient id="Y" y2="100" gradientUnits="userSpaceOnUse" x2="147" y1="179" x1="139">
+   <stop stop-opacity=".15"/>
    <stop stop-opacity=".06" offset=".3"/>
    <stop stop-opacity=".03" offset="1"/>
   </linearGradient>
  </defs>
- <circle cy="128" cx="128" r="110" fill="#fff"/>
+ <circle fill="#fff" cy="128" cx="128" r="50"/>
  <path fill-opacity=".1" d="m198 148a70 70 0 0 0 -140 0h20a50 50 0 0 1 100 0"/>
  <circle fill-opacity=".1" cy="142" cx="133" r="38"/>
- <circle cy="128" cx="128" r="41" fill="url(#blueFade)"/>
- <path d="m228 78a112 112 0 0 0 -193 -13l45 78a50 50 0 0 1 47 -65" fill="url(#redFade)"/>
- <path d="m35 65a112 112 0 0 0 84 174l47-80a50 50 0 0 1 -86 -16" fill="url(#greenFade)"/>
- <path d="m119 239a112 112 0 0 0 109 -161h-101a50 50 0 0 1 39 81" fill="url(#yellowFade)"/>
- <path d="m35 65l45 78a50 50 0 0 1 2 -34l-45-47" fill="url(#redShadow)"/>
- <path d="m119 239l47-80a50 50 0 0 1 -29 17l-20 63" fill="url(#greenShadow)"/>
- <path d="m228 78h-101a50 50 0 0 1 39 19l64-16" fill="url(#yellowShadow)"/>
+ <circle fill="url(#b)" cy="128" cx="128" r="41"/>
+ <path fill="url(#r)" d="m228 78a112 112 0 0 0 -193 -13l45 78a50 50 0 0 1 47 -65"/>
+ <path fill="url(#g)" d="m35 65a112 112 0 0 0 84 174l47-80a50 50 0 0 1 -86 -16"/>
+ <path fill="url(#y)" d="m119 239a112 112 0 0 0 109 -161h-101a50 50 0 0 1 39 81"/>
+ <path fill="url(#R)" d="m35 65l45 78a50 50 0 0 1 2 -34l-45-47"/>
+ <path fill="url(#G)" d="m119 239l47-80a50 50 0 0 1 -29 17l-20 63"/>
+ <path fill="url(#Y)" d="m228 78h-101a50 50 0 0 1 39 19l64-16"/>
 </svg>
