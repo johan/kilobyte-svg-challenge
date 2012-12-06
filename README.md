@@ -17,7 +17,7 @@ The purpose of the Kilobyte SVG Challenge is sixfold:
 
 * Viewed in a web browser,
   your SVG must scale to the window size
-  and maintain its aspect ratio. [How?](#How)
+  and maintain its aspect ratio. [How?](#how)
 
 * Quality trumps size
   – while 1k is a goal,
