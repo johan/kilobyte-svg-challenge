@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Kilobyte SVG Challenge by johan</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Kilobyte SVG Challenge</h1>
+        <p class="header">Your mission, should you choose to accept it: make your favourite logo in 1024 bytes or less.</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/johan/kilobyte-svg-challenge/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/johan/kilobyte-svg-challenge/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/johan/kilobyte-svg-challenge">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/johan">johan</a></p>
+
+
+      </header>
+      <section>
+        <h1>Kilobyte SVG Challenge</h1>
+
+<p>Make an accurate SVG of a logo, in 1024 bytes or less!</p>
+
+<h2>Rationale</h2>
+
+<p>The purpose of the Kilobyte SVG Challenge is sixfold:</p>
+
+<ul>
+<li>marketing SVG use on the web</li>
+<li>teaching SVG, "view source" style</li>
+<li>marketing and improving SVG tools</li>
+<li>collecting great, fast, and tiny SVG logos</li>
+<li>learning, and having lots of geeky fun doing it!</li>
+</ul><h2>Rules</h2>
+
+<ul>
+<li><p>Viewed in a web browser,
+your SVG must scale to the window size
+and maintain its aspect ratio. <a href="#how">How?</a></p></li>
+<li><p>Quality trumps size
+– while 1k is a goal,
+don't sacrifice looks!</p></li>
+<li><p>You are encouraged to improve
+on already submitted logos!</p></li>
+<li><p>No raster data, <code>data:</code> urls or multi-file svgs.</p></li>
+<li><p>One tag per line, indented one or two spaces.</p></li>
+<li>
+<p>Create a pull request:</p>
+
+<ul>
+<li>Name it after your logo.</li>
+<li>List <code>original: &lt;url&gt;</code>
+on the first line of your comment,
+linking a version of the logo on the web.</li>
+</ul>
+</li>
+</ul><h3>Best practices</h3>
+
+<ul>
+<li>Since one goal is teaching, think of your commits as a step by step guide:</li>
+<li>When optimizing, make separate commits for different operations you do.</li>
+<li>Write good commit messages about what you did, that others can learn from.</li>
+<li>When using tools, you are encouraged to name them in your commit messages.</li>
+<li>If it's a command-line tool, better still:
+paste your command line args further down in the message!</li>
+</ul><h2>How?</h2>
+
+<ul>
+<li>To make an SVG scale,
+make sure your <code>&lt;svg&gt;</code> element
+has a <code>viewBox</code> attribute,
+and no <code>width</code>, <code>height</code> or
+<a href="https://developer.mozilla.org/en-US/docs/SVG/Attribute/preserveAspectRatio"><code>preserveAspectRatio</code></a>
+attributes (<code>xMidYMid meet</code>
+is already the default).</li>
+</ul><h2>Tools</h2>
+
+<ul>
+<li>
+<a href="http://inkscape.org/">InkScape</a>: a popular open source SVG editor</li>
+<li>Your favourite text editor - Emacs, vim, Textmate, et cetera</li>
+<li>
+<a href="http://www.codedread.com/scour/">Scour</a> [<a href="https://launchpad.net/scour">launchpad</a>]: a python module / script by Jeff Schiller to shrink SVG file sizes</li>
+<li>
+<a href="http://libregraphicsworld.org/blog/entry/introducing-svg-cleaner">SVG Cleaner</a>: a similar perl script with a graphical UI wrapper</li>
+<li>
+<a href="https://npmjs.org/package/svg-cleaner">SVG-Cleaner</a> [<a href="https://github.com/preciousforever/SVG-Cleaner">github</a>]: a javascript npm port of (parts of) Scour</li>
+<li>
+<a href="http://intertwingly.net/code/svgtidy/svgtidy.rb">svgtidy</a>: a ruby script by Sam Ruby</li>
+<li>
+<a href="http://cleansvg.codeplex.com/">CleanSVG</a>: a .NET windows tool by Microsoft</li>
+</ul><h2>Legal</h2>
+
+<p>All logos, copyrights,
+trademarks and other legal rights
+to the images in this repository
+belong to their respective owners,
+not the people submitting
+vectorized versions thereof.</p>
+
+<p>If you find your logo represented here
+and would rather have people use whatever
+inferior non-scalable, slow-loading,
+pixellated raster graphics version
+they find when talking about you on the web,
+just submit an <a href="https://github.com/johan/kilobyte-svg-challenge/issues">issue</a> mentioning "takedown"
+in its title, list the url to the logo in question,
+and it will of course be removed from here.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		          <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-36882640-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
