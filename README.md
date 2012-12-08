@@ -64,6 +64,7 @@ The purpose of the Kilobyte SVG Challenge is sixfold:
 * [SVG-Cleaner](https://npmjs.org/package/svg-cleaner) [[github](https://github.com/preciousforever/SVG-Cleaner)]: a javascript npm port of (parts of) Scour
 * [svgtidy](http://intertwingly.net/code/svgtidy/svgtidy.rb): a ruby script by Sam Ruby
 * [CleanSVG](http://cleansvg.codeplex.com/): a .NET windows tool by Microsoft
+* [SVG Optimizer](https://github.com/svg/svgo#readme):  a Nodejs-based tool by Kir Belevich
 
 ## Legal
 
