@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 707.6 550.1">
  <defs>
   <linearGradient id="c" y2="275" gradientUnits="userSpaceOnUse" x2="64.78" y1="769.4" x1="114.5">
-   <stop stop-color="#193b5e" offset="0"/>
+   <stop stop-color="#193b5e"/>
    <stop stop-color="#1873bb" offset="1"/>
   </linearGradient>
   <linearGradient id="b" y2="180.3" gradientUnits="userSpaceOnUse" x2="414.1" y1="789.3" x1="224.1">
-   <stop stop-color="#0f6098" offset="0"/>
+   <stop stop-color="#0f6098"/>
    <stop stop-color="#32a2ea" offset="1"/>
   </linearGradient>
   <linearGradient id="a" y2="153.5" gradientUnits="userSpaceOnUse" x2="489.6" y1="818.5" x1="689.3">
-   <stop stop-color="#128fe1" offset="0"/>
+   <stop stop-color="#128fe1"/>
    <stop stop-color="#68c5fa" offset="1"/>
   </linearGradient>
  </defs>
