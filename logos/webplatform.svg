@@ -17,20 +17,20 @@
     <glyph unicode="g" horiz-adv-x="615" d="M42 -110q0 38 26 68t52 41l27 11q-7 1 -17 4t-26.5 20t-16.5 42q0 31 52 113q-77 51 -77 156q0 99 66.5 152t173.5 53q67 0 118 -24l172 4v-80l-82 -14q0 -1 5 -13.5t8.5 -29.5t3.5 -36q0 -104 -65 -154.5t-175 -50.5q-12 0 -23.5 1t-19 2.5t-8.5 1.5l-4 -67h148q96 0 148 -40t52 -115q0 -86 -70.5 -138t-209.5 -52q-126 0 -192 33t-66 112zM297 447q-85 0 -85 -95q0 -100 80 -100q46 0 65.5 24t19.5 76q0 95 -80 95zM340 -20h-105q-5 -2 -13 -7t-21.5 -22t-13.5 -36q0 -36 29.5 -48t95.5 -12q68 0 98 16t30 52q0 32 -23.5 44.5t-76.5 12.5z"/>
   </font>
   <defs>
-    <path id="line-long" d="m-15.5,0v85a15.5,15.5 0 0 0 31,0v-85a15.5,15.5 0 0 0 -31,0zm9,0a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0zm0,85a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0z" fill-rule="evenodd"></path>
-    <path id="line-short" d="m-15.5,0v60.81118318204309a15.5,15.5 0 0 0 31,0v-60.81118318204309a15.5,15.5 0 0 0 -31,0zm9,0a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0zm0,60.81118318204309a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0z" fill-rule="evenodd"></path>
-    <clipPath id="clip-orange-red"><use transform="translate(52,19)" xlink:href="#line-long"></use></clipPath>
-    <clipPath id="clip-red-purple"><use transform="translate(52,104)rotate(-135)" xlink:href="#line-short"></use></clipPath>
-    <clipPath id="clip-purple-cyan"><use transform="translate(138,19)" xlink:href="#line-long"></use></clipPath>
+    <path id="l" d="m-15.5,0v85a15.5,15.5 0 0 0 31,0v-85a15.5,15.5 0 0 0 -31,0zm9,0a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0zm0,85a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0z" fill-rule="evenodd"></path>
+    <path id="i" d="m-15.5,0v60.81118318204309a15.5,15.5 0 0 0 31,0v-60.81118318204309a15.5,15.5 0 0 0 -31,0zm9,0a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0zm0,60.81118318204309a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0z" fill-rule="evenodd"></path>
+    <clipPath id="o"><use transform="translate(52,19)" xlink:href="#l"></use></clipPath>
+    <clipPath id="r"><use transform="translate(52,104)rotate(-135)" xlink:href="#i"></use></clipPath>
+    <clipPath id="p"><use transform="translate(138,19)" xlink:href="#l"></use></clipPath>
   </defs>
   <g transform="translate(-.5,-.5)">
-    <use transform="translate(52,19)" xlink:href="#line-long" fill="#f89c20"></use>
-    <use transform="translate(52,104)rotate(-135)" xlink:href="#line-short" fill="#e54e26"></use>
-    <use transform="translate(138,19)" xlink:href="#line-long" fill="#2eb3c4"></use>
-    <use transform="translate(138,104)rotate(135)" xlink:href="#line-short" fill="#694d9f"></use>
-    <g clip-path="url(#clip-orange-red)"><use transform="translate(52,104)rotate(-135)" xlink:href="#line-short" fill="#d02e27"></use></g>
-    <g clip-path="url(#clip-red-purple)"><use transform="translate(138,104)rotate(135)" xlink:href="#line-short" fill="#7f1333"></use></g>
-    <g clip-path="url(#clip-purple-cyan)"><use transform="translate(138,104)rotate(135)" xlink:href="#line-short" fill="#263c81"></use></g>
+    <use transform="translate(52,19)" xlink:href="#l" fill="#f89c20"></use>
+    <use transform="translate(52,104)rotate(-135)" xlink:href="#i" fill="#e54e26"></use>
+    <use transform="translate(138,19)" xlink:href="#l" fill="#2eb3c4"></use>
+    <use transform="translate(138,104)rotate(135)" xlink:href="#i" fill="#694d9f"></use>
+    <g clip-path="url(#o)"><use transform="translate(52,104)rotate(-135)" xlink:href="#i" fill="#d02e27"></use></g>
+    <g clip-path="url(#r)"><use transform="translate(138,104)rotate(135)" xlink:href="#i" fill="#7f1333"></use></g>
+    <g clip-path="url(#p)"><use transform="translate(138,104)rotate(135)" xlink:href="#i" fill="#263c81"></use></g>
     <text x="95" y="150" text-anchor="middle" font-family="Bitter" font-size="20" font-weight="bold" fill="#474747">WebPlatform<tspan fill="#a3a3a3">.org</tspan></text>
   </g>
 </svg>
