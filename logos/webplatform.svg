@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="6 3 177 153"
      xmlns:xlink="http://www.w3.org/1999/xlink">
   <font horiz-adv-x="592">
-    <font-face font-family="Bitter" font-weight="700" font-stretch="normal" units-per-em="1000" panose-1="2 0 0 0 0 0 0 0 0 0" ascent="800" descent="-200" x-height="550" bbox="-10 -255 1030 787" underline-thickness="50" underline-position="-50"/>
+    <font-face font-family="Bitter" font-weight="700" panose-1="2 0 0 0 0 0 0 0 0 0"/>
     <glyph unicode="W" horiz-adv-x="1035" d="M237 0l-162 588l-70 29v83l297 5v-88l-73 -30l86 -362l140 472l135 8l134 -479l96 361l-75 30v83l285 5v-88l-72 -30l-171 -587h-142l-131 475q-24 -98 -78.5 -276.5t-60.5 -198.5h-138z"/>
     <glyph unicode="e" horiz-adv-x="557" d="M524 240l-332 -3q4 -62 36.5 -96t83.5 -34q37 0 79 11.5t65 23.5l24 12l43 -80q-11 -9 -31 -23t-80 -37.5t-117 -23.5q-127 0 -193.5 70.5t-66.5 199.5q0 133 71 211.5t196 78.5q110 0 169 -63t59 -172zM292 433q-41 0 -66.5 -28t-31.5 -75h180q0 103 -82 103z"/>
     <glyph unicode="b" horiz-adv-x="595" d="M-10 767l222 8v-278q69 53 143 53q100 0 152.5 -69t52.5 -196q0 -143 -74 -220t-216 -77q-49 0 -100 5.5t-78 10.5l-27 6v657l-75 20v80zM212 387v-274q23 -8 74 -8q119 0 119 170q0 157 -98 157q-27 0 -50.5 -11t-34.5 -23z"/>
