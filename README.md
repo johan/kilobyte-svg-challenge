@@ -26,8 +26,7 @@ The purpose of the Kilobyte SVG Challenge is sixfold:
 * No raster data, `data:` urls or multi-file svgs.
   * Exception: As Firefox does not
     (and will not) support SVG fonts,
-    [do link external web fonts](https://github.com/johan/kilobyte-svg-challenge/commit/e6f68780dbc49dc2c48fdf73e2f2bb4f31e8365b)
-    – for text.
+    do link external web fonts – for text. [How?](#how)
 * Indent elements to show nesting depth.
 * Generally stick to one element per line.
 * Create a pull request:
@@ -54,6 +53,9 @@ The purpose of the Kilobyte SVG Challenge is sixfold:
   [`preserveAspectRatio`](https://developer.mozilla.org/en-US/docs/SVG/Attribute/preserveAspectRatio)
   attributes (`xMidYMid meet`
   is already the default).
+* If you want to link an external
+  WOFF font from Google, for instance,
+  [this way conserves size](https://github.com/johan/kilobyte-svg-challenge/commit/e6f68780dbc49dc2c48fdf73e2f2bb4f31e8365b).
 
 ## Tools
 
