@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="6 3 177 153"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>@import url("http://fonts.googleapis.com/css?family=Bitter:700&amp;text=WebPlatform.org");</style>
+  <defs>
+    <path id="l" d="m-15.5,0v85a15.5,15.5 0 0 0 31,0v-85a15.5,15.5 0 0 0 -31,0zm9,0a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0zm0,85a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0z" fill-rule="evenodd"></path>
+    <path id="i" d="m-15.5,0v60.81118318204309a15.5,15.5 0 0 0 31,0v-60.81118318204309a15.5,15.5 0 0 0 -31,0zm9,0a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0zm0,60.81118318204309a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0z" fill-rule="evenodd"></path>
+    <clipPath id="o"><use xlink:href="#l" transform="translate(52,19)"/></clipPath>
+    <clipPath id="r"><use xlink:href="#i" transform="translate(52,104)rotate(-135)"/></clipPath>
+    <clipPath id="p"><use xlink:href="#l" transform="translate(138,19)"/></clipPath>
+  </defs>
+  <g transform="translate(-.5,-.5)">
+    <use fill="#f89c20" xlink:href="#l" transform="translate(52,19)"/>
+    <use fill="#e54e26" xlink:href="#i" transform="translate(52,104)rotate(-135)"/>
+    <use fill="#2eb3c4" xlink:href="#l" transform="translate(138,19)"/>
+    <use fill="#694d9f" xlink:href="#i" transform="translate(138,104)rotate(135)"/>
+    <g clip-path="url(#o)"><use fill="#d02e27" xlink:href="#i" transform="translate(52,104)rotate(-135)"/></g>
+    <g clip-path="url(#r)"><use fill="#7f1333" xlink:href="#i" transform="translate(138,104)rotate(135)"/></g>
+    <g clip-path="url(#p)"><use fill="#263c81" xlink:href="#i" transform="translate(138,104)rotate(135)"/></g>
+    <text fill="#474747" x="95" y="150" text-anchor="middle" font-family="Bitter" font-size="20" font-weight="bold">WebPlatform<tspan fill="#a3a3a3">.org</tspan></text>
+  </g>
+</svg>
