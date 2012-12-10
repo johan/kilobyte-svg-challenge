@@ -29,8 +29,8 @@ The purpose of the Kilobyte SVG Challenge is sixfold:
     do link external web fonts – for text. [How?](#how)
 * Indent elements to show nesting depth.
 * Generally stick to one element per line.
-* Create a pull request:
-  * Name it `Logo Name: <nnnn> bytes`
+* Whether adding or trimming, make a pull request:
+  * Name it `<Logo Name>: <nnnn> bytes`
   * List `original: <url>`
     on the first line of your comment,
     linking a version of the logo on the web.
