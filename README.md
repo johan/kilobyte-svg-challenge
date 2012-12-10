@@ -18,20 +18,20 @@ The purpose of the Kilobyte SVG Challenge is sixfold:
 * Viewed in a web browser,
   your SVG must scale to the window size
   and maintain its aspect ratio. [How?](#how)
-
 * Quality trumps size
   – while 1k is a goal,
   don't sacrifice looks!
-
 * You are encouraged to improve
   on already submitted logos!
-
 * No raster data, `data:` urls or multi-file svgs.
-
-* One tag per line, indented one or two spaces.
-
+  * Exception: As Firefox does not
+    (and will not) support SVG fonts,
+    [do link external web fonts](https://github.com/johan/kilobyte-svg-challenge/commit/e6f68780dbc49dc2c48fdf73e2f2bb4f31e8365b)
+    – for text.
+* Indent elements to show nesting depth.
+* Generally stick to one element per line.
 * Create a pull request:
-  * Name it after your logo.
+  * Name it `Logo Name: <nnnn> bytes`
   * List `original: <url>`
     on the first line of your comment,
     linking a version of the logo on the web.
@@ -57,14 +57,21 @@ The purpose of the Kilobyte SVG Challenge is sixfold:
 
 ## Tools
 
+### Drawing
+
 * [InkScape](http://inkscape.org/): a popular open source SVG editor
-* Your favourite text editor - Emacs, vim, Textmate, et cetera
+* [SVG Edit](http://svg-edit.googlecode.com/svn/trunk/editor/svg-editor.html): a free web browser based SVG editor
+* [Illustrator](http://www.adobe.com/products/illustrator.html): a commercial vector graphics package from Adobe
+
+### Optimizers
+
 * [Scour](http://www.codedread.com/scour/) [[launchpad](https://launchpad.net/scour)]: a python module / script by Jeff Schiller to shrink SVG file sizes
 * [SVG Cleaner](http://libregraphicsworld.org/blog/entry/introducing-svg-cleaner): a similar perl script with a graphical UI wrapper
 * [SVG-Cleaner](https://npmjs.org/package/svg-cleaner) [[github](https://github.com/preciousforever/SVG-Cleaner)]: a javascript npm port of (parts of) Scour
 * [svgtidy](http://intertwingly.net/code/svgtidy/svgtidy.rb): a ruby script by Sam Ruby
 * [CleanSVG](http://cleansvg.codeplex.com/): a .NET windows tool by Microsoft
 * [SVG Optimizer](https://github.com/svg/svgo#readme):  a Nodejs-based tool by Kir Belevich
+* Your favourite text editor! - Emacs, vim, Textmate, et cetera all work great
 
 ## Legal
 
