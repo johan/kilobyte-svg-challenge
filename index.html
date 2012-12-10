@@ -4,31 +4,40 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Kilobyte SVG Challenge by johan</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
   <body>
-    <div class="wrapper">
+
       <header>
-        <h1 class="header">Kilobyte SVG Challenge</h1>
-        <p class="header">Your mission, should you choose to accept it: make your favourite logo in 1024 bytes or less.</p>
-
-        <ul>
-          <li class="download"><a class="buttons" href="https://github.com/johan/kilobyte-svg-challenge/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/johan/kilobyte-svg-challenge/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/johan/kilobyte-svg-challenge">View On GitHub</a></li>
-        </ul>
-
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/johan">johan</a></p>
-
-
+        <h1>Kilobyte SVG Challenge</h1>
+        <p>Your mission, should you choose to accept it: make your favourite logo in 1024 bytes or less.</p>
       </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/johan/kilobyte-svg-challenge" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/johan/kilobyte-svg-challenge/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/johan/kilobyte-svg-challenge/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
       <section>
         <h1>Kilobyte SVG Challenge</h1>
 
@@ -47,21 +56,31 @@
 </ul><h2>Rules</h2>
 
 <ul>
-<li><p>Viewed in a web browser,
+<li>Viewed in a web browser,
 your SVG must scale to the window size
-and maintain its aspect ratio. <a href="#how">How?</a></p></li>
-<li><p>Quality trumps size
+and maintain its aspect ratio. <a href="#how">How?</a>
+</li>
+<li>Quality trumps size
 – while 1k is a goal,
-don't sacrifice looks!</p></li>
-<li><p>You are encouraged to improve
-on already submitted logos!</p></li>
-<li><p>No raster data, <code>data:</code> urls or multi-file svgs.</p></li>
-<li><p>One tag per line, indented one or two spaces.</p></li>
-<li>
-<p>Create a pull request:</p>
+don't sacrifice looks!</li>
+<li>You are encouraged to improve
+on already submitted logos!</li>
+<li>No raster data, <code>data:</code> urls or multi-file svgs.
 
 <ul>
-<li>Name it after your logo.</li>
+<li>Exception: As Firefox does not
+(and will not) support SVG fonts,
+do link external web fonts – for text. <a href="#how">How?</a>
+</li>
+</ul>
+</li>
+<li>Indent elements to show nesting depth.</li>
+<li>Generally stick to one element per line.</li>
+<li>Whether adding or trimming, make a pull request:
+
+<ul>
+<li>Name it <code>&lt;Logo Name&gt;: &lt;nnnn&gt; bytes</code>
+</li>
 <li>List <code>original: &lt;url&gt;</code>
 on the first line of your comment,
 linking a version of the logo on the web.</li>
@@ -86,12 +105,23 @@ and no <code>width</code>, <code>height</code> or
 <a href="https://developer.mozilla.org/en-US/docs/SVG/Attribute/preserveAspectRatio"><code>preserveAspectRatio</code></a>
 attributes (<code>xMidYMid meet</code>
 is already the default).</li>
+<li>If you want to link an external
+WOFF font from Google, for instance,
+<a href="https://github.com/johan/kilobyte-svg-challenge/commit/e6f68780dbc49dc2c48fdf73e2f2bb4f31e8365b">this way conserves size</a>.</li>
 </ul><h2>Tools</h2>
+
+<h3>Drawing</h3>
 
 <ul>
 <li>
 <a href="http://inkscape.org/">InkScape</a>: a popular open source SVG editor</li>
-<li>Your favourite text editor - Emacs, vim, Textmate, et cetera</li>
+<li>
+<a href="http://svg-edit.googlecode.com/svn/trunk/editor/svg-editor.html">SVG Edit</a>: a free web browser based SVG editor</li>
+<li>
+<a href="http://www.adobe.com/products/illustrator.html">Illustrator</a>: a commercial vector graphics package from Adobe</li>
+</ul><h3>Optimizers</h3>
+
+<ul>
 <li>
 <a href="http://www.codedread.com/scour/">Scour</a> [<a href="https://launchpad.net/scour">launchpad</a>]: a python module / script by Jeff Schiller to shrink SVG file sizes</li>
 <li>
@@ -102,6 +132,9 @@ is already the default).</li>
 <a href="http://intertwingly.net/code/svgtidy/svgtidy.rb">svgtidy</a>: a ruby script by Sam Ruby</li>
 <li>
 <a href="http://cleansvg.codeplex.com/">CleanSVG</a>: a .NET windows tool by Microsoft</li>
+<li>
+<a href="https://github.com/svg/svgo#readme">SVG Optimizer</a>:  a Nodejs-based tool by Kir Belevich</li>
+<li>Your favourite text editor! - Emacs, vim, Textmate, et cetera all work great</li>
 </ul><h2>Legal</h2>
 
 <p>All logos, copyrights,
@@ -121,11 +154,12 @@ in its title, list the url to the logo in question,
 and it will of course be removed from here.</p>
       </section>
       <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+        <p>Project maintained by <a href="https://github.com/johan">johan</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		          <script type="text/javascript">
+              <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
