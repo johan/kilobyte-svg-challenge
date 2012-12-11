@@ -1,6 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300.818 132.374">
- <path fill="#b7b7b7" display="none" d="m243.878 41.203v.318h-.9v2.351h-.365v-2.351h-.898v-.318h2.163z"/>
- <path fill="#b7b7b7" display="none" d="m244.202 41.203h.518l.768 2.258.762-2.258h.516v2.669h-.347v-1.575c0-.055 0-.145.005-.27.002-.127.002-.261.002-.406l-.76 2.251h-.361l-.769-2.251v.082c0 .064 0 .164.009.298 0 .135.003.233.003.296v1.575h-.345v-2.669z"/>
  <polygon fill="#bcbec0" opacity=".2" stroke="#636466" stroke-width=".75" points=".443 .375 300.443 .465 300.443 102.231 22.514 131.963"/>
  <linearGradient id="i" y2="85.3975" gradientUnits="userSpaceOnUse" y1="-45.4399" x2="164.1086" x1="141.8384">
   <stop stop-color="#545757" offset="0"/>
