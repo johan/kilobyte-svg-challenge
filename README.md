@@ -34,6 +34,9 @@ The purpose of the Kilobyte SVG Challenge is sixfold:
   * List `original: <url>`
     on the first line of your comment,
     linking a version of the logo on the web.
+  * List `twitter: <your twitter alias>`
+    on the second line of your comment,
+    to get your contribution flaunted on Twitter.
 
 ### Best practices
 
