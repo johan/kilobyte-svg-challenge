@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300.75 132.374">
  <polygon fill="#bcbec0" opacity=".2" stroke="#636466" stroke-width=".75" points=".375 .375 300.375 .375 300.375 102.231 22.514 131.963"/>
  <linearGradient id="i" y2="85.3975" gradientUnits="userSpaceOnUse" y1="-45.4399" x2="164.1086" x1="141.8384">
-  <stop stop-color="#545757" offset="0"/>
+  <stop stop-color="#545757"/>
   <stop stop-color="#1f2323" offset="1"/>
  </linearGradient>
  <polygon fill="url(#i)" points="292.165 94.788 29.388 122.9 10.228 8.659 292.165 8.743"/>
  <polygon fill="#fff" opacity=".3" points="14.467 80.358 .972 .805 107.84 .921 .443 .375"/>
  <linearGradient id="t" gradientUnits="userSpaceOnUse" x2="0" y1="37.1523" y2="73.1164">
-  <stop stop-color="#fff" offset="0"/>
+  <stop stop-color="#fff"/>
   <stop stop-color="#dcddde" offset="1"/>
  </linearGradient>
  <g fill="url(#t)" stroke="#fff" stroke-width="0.25">
