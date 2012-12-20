@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 772 600">
+ <linearGradient id="c" gradientUnits="userSpaceOnUse" x1="185" y1="6" x2="135" y2="501" gradientTransform="matrix(0.9 0 0 -0.9 -13 561)">
+  <stop stop-color="#193B5E"/>
+  <stop stop-color="#1873BB" offset="1"/>
+ </linearGradient>
+ <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="304" y1="-14" x2="494" y2="594" gradientTransform="matrix(0.9 0 0 -0.9 -13 561)">
+  <stop stop-color="#0F6098"/>
+  <stop stop-color="#32A2EA" offset="1"/>
+ </linearGradient>
+ <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="772" y1="-40" x2="571" y2="624" gradientTransform="matrix(0.9 0 0 -0.9 -13 561)">
+  <stop stop-color="#128FE1"/>
+  <stop stop-color="#68C5FA" offset="1"/>
+ </linearGradient>  
+ <path fill="url(#a)" d="M567.6,600c-4-8-26.3-266-101.4-469.6C425.4,20,382,1.4,383.3,0c2.7,0,188.6,51,215,61.3c14.5,5,51.7,40,87.4,138.4C736.3,339,762,513.4,771,577.6C770.3,578.3,576.3,600.4,567.6,600"/>
+ <path fill="url(#b)" d="M134,582.5c-0-5,30,3,66-117C234,350.4,271.5,82,327,31.4c14.4-13,35-16.7,53-5C436.6,64,477,237,477,237s-19,98-28.7,136.3c-26.5,106-59,186-91,194.3C354,568.6,134,585.5,134,582.5"/>
+ <path fill="url(#c)" d="M118.6,560c-8.7-2.4-29-14.3-48-67C44.4,422.7,19.6,288,4,130.7C-0.5,86-0.5,87,0.6,86c1-1,213.5,39,215,40.5c5.4,21,12.7,91,16,121.8c0,1.7-33.4,248-86.5,301C136,558,126.3,562,118.6,560L118.6,560"/>
+</svg>
