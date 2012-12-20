@@ -42,11 +42,11 @@ ul.svgs:hover div:not(:hover) {
 ul.svgs div:hover img {
   pointer-events: none;
   -webkit-transition: all .1s ease-in-out;
-  max-width:  300%;
-  max-height: 300%;
-  width:      300%;
-  height:     300%;
-  margin:     -150% 0 0 -150%;
+  max-width:  500%;
+  max-height: 500%;
+  width:      500%;
+  height:     500%;
+  margin:     -250% 0 0 -250%;
   z-index:    2;
   opacity:    1;
 }
