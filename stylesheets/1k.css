@@ -6,10 +6,17 @@ ul.svgs li {
   display: inline-block;
   list-style-type: none;
   list-style-image: none;
-  outline: 1px dotted #ccc;
   text-align: center;
   vertical-align: middle;
   margin: 0 4px 4px 0;
+}
+
+ul.svgs li.onek {
+  /*outline: 1px dashed #ccc;*/
+}
+
+ul.svgs li.more {
+  outline: 1px dotted #ccc;
 }
 
 ul.svgs li a {
