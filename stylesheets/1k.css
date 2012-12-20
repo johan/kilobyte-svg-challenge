@@ -1,0 +1,52 @@
+ul.svgs {
+  display: block;
+}
+
+ul.svgs li {
+  display: inline-block;
+  list-style-type: none;
+  list-style-image: none;
+  outline: 1px dotted #ccc;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 4px 4px 0;
+}
+
+ul.svgs li div {
+  position: relative;
+  height: 128px;
+  width:  128px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+ul.svgs img {
+  position: absolute;
+  max-height: 128px;
+  max-width:  128px;
+  margin-left: -50%;
+  margin-top:  -50%;
+  top:  64px;
+  left: 64px;
+  height: 100%;
+  width:  100%;
+}
+
+
+ul.svgs:hover div:not(:hover) {
+  /*-webkit-transition: opacity 1s ease-in-out;*/
+  opacity: 0.25;
+}
+
+ul.svgs div:hover img {
+  pointer-events: none;
+  -webkit-transition: all .1s ease-in-out;
+  max-width:  300%;
+  max-height: 300%;
+  width:      300%;
+  height:     300%;
+  margin:     -150% 0 0 -150%;
+  z-index:    2;
+  opacity:    1;
+}
