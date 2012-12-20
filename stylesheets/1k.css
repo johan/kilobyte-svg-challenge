@@ -12,7 +12,7 @@ ul.svgs li {
   margin: 0 4px 4px 0;
 }
 
-ul.svgs li div {
+ul.svgs li a {
   position: relative;
   height: 128px;
   width:  128px;
@@ -34,12 +34,12 @@ ul.svgs img {
 }
 
 
-ul.svgs:hover div:not(:hover) {
+ul.svgs:hover a:not(:hover) {
   /*-webkit-transition: opacity 1s ease-in-out;*/
   opacity: 0.25;
 }
 
-ul.svgs div:hover img {
+ul.svgs a:hover img {
   pointer-events: none;
   -webkit-transition: all .1s ease-in-out;
   max-width:  500%;
