@@ -28,7 +28,7 @@ ul.svgs li a {
   vertical-align: middle;
 }
 
-ul.svgs img {
+ul.svgs img, ul.svgs svg {
   position: absolute;
   max-height: 128px;
   max-width:  128px;
@@ -46,7 +46,7 @@ ul.svgs:hover a:not(:hover) {
   opacity: 0.25;
 }
 
-ul.svgs a:hover img {
+ul.svgs a:hover img, ul.svgs a:hover svg {
   pointer-events: none;
   -webkit-transition: all .1s ease-in-out;
   max-width:  500%;
