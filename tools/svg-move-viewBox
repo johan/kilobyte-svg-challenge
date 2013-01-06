@@ -1,0 +1,150 @@
+#! /usr/bin/env phantomjs
+// -*- js2 -*-
+
+var webpage = require('webpage')
+  , URL;
+  ;
+
+if (phantom.args.length < 1 || phantom.args.length > 1) {
+  console.log('Usage: svg-move-viewBox source.svg');
+  phantom.exit();
+}
+else {
+  URL = phantom.args[0];
+  load(URL, onload);
+}
+
+function load(url, fn) {
+  var page = webpage.create();
+  page.onConsoleMessage = function(msg) {
+    console.log(msg);
+  };
+  page.open(url, function (status) {
+    if (status !== 'success')
+      console.log('Unable to load ' + url);
+    else
+      fn(page);
+  });
+}
+
+function onload(page) {
+  page.onConsoleMessage = function(msg) {
+    console.log(msg);
+    phantom.exit();
+  };
+  page.evaluate(onSVG);
+}
+
+function onSVG() {
+  function array(ish, start) { return _sl.call(ish, start || 0); }
+  var _sl = [].slice
+    , svg = document.documentElement
+    ;
+  moveViewBox();
+  console.log((new XMLSerializer).serializeToString(svg));
+
+  // Move the top/left coordinate of the viewBox to x, y (0, 0 by default), and
+  // updates all shape elements accordingly, to retain their original position.
+  // NOTE: Does not handle transforms right, or accommodate non-shape elements!
+  function moveViewBox(x, y) {
+    var viewBox = document.documentElement.viewBox.baseVal
+      , dx      = (x = x || 0) - viewBox.x
+      , dy      = (y = y || 0) - viewBox.y
+      , move    =
+        { path:     path
+        , rect:     x1y1
+        , line:     x2y2
+        , circle:   cxcy
+        , ellipse:  cxcy
+        , polygon:  pnts
+        , polyline: pnts
+        }
+      , elem
+      ;
+
+    for (elem in move)
+      array(document.querySelectorAll(elem)).forEach(move[elem]);
+
+    viewBox.x = x;
+    viewBox.y = y;
+
+    function path(p) {
+      convertToRelative(p);
+      var c = p.pathSegList.getItem(0);
+      c.x += dx;
+      c.y += dy;
+    }
+    function x1y1(e) {
+      var x1 = parseFloat(e.getAttribute('x1') || '0')
+        , y1 = parseFloat(e.getAttribute('y1') || '0');
+      e.setAttribute('x1', x1 + dx);
+      e.setAttribute('y1', y1 + dy);
+    }
+    function x2y2(l) {
+      x1y1(l);
+      var x2 = parseFloat(c.getAttribute('x2') || '0')
+        , y2 = parseFloat(c.getAttribute('y2') || '0');
+      c.setAttribute('x2', x2 + dx);
+      c.setAttribute('y2', y2 + dy);
+    }
+    function cxcy(c) {
+      var cx = parseFloat(c.getAttribute('cx') || '0')
+        , cy = parseFloat(c.getAttribute('cy') || '0');
+      c.setAttribute('cx', cx + dx);
+      c.setAttribute('cy', cy + dy);
+    }
+    function pnts(p) {
+      for (var P = p.points, l = P.numberOfItems, i = 0, c; i < l; i++) {
+        c = P.getItem(i);
+        c.x += dx;
+        c.y += dy;
+      }
+    }
+  }
+
+  // based on http://stackoverflow.com/a/9677915/1130377
+  function convertToRelative(path) {
+    function set(type) {
+      var args = array(arguments, 1)
+        , rcmd = 'createSVGPathSeg'+ type +'Rel'
+        , rseg = path[rcmd].apply(path, args);
+      segs.replaceItem(rseg, i);
+    }
+    var dx, dy, x0, y0, x1, y1, x2, y2, segs = path.pathSegList;
+    for (var x = 0, y = 0, i = 0, len = segs.numberOfItems; i < len; i++) {
+      var seg = segs.getItem(i)
+        , c   = seg.pathSegTypeAsLetter;
+      if (/[MLHVCSQTAZz]/.test(c)) {
+        if ('x1' in seg) x1 = seg.x1 - x;
+        if ('x2' in seg) x2 = seg.x2 - x;
+        if ('y1' in seg) y1 = seg.y1 - y;
+        if ('y2' in seg) y2 = seg.y2 - y;
+        if ('x'  in seg) dx = -x + (x = seg.x);
+        if ('y'  in seg) dy = -y + (y = seg.y);
+        switch (c) {
+          case 'M': set('Moveto',dx,dy);                   break;
+          case 'L': set('Lineto',dx,dy);                   break;
+          case 'H': set('LinetoHorizontal',dx);            break;
+          case 'V': set('LinetoVertical',dy);              break;
+          case 'C': set('CurvetoCubic',dx,dy,x1,y1,x2,y2); break;
+          case 'S': set('CurvetoCubicSmooth',dx,dy,x2,y2); break;
+          case 'Q': set('CurvetoQuadratic',dx,dy,x1,y1);   break;
+          case 'T': set('CurvetoQuadraticSmooth',dx,dy);   break;
+          case 'A': set('Arc',dx,dy,seg.r1,seg.r2,seg.angle,
+                        seg.largeArcFlag,seg.sweepFlag);   break;
+          case 'Z': case 'z': x = x0; y = y0; break;
+        }
+      }
+      else {
+        if ('x' in seg) x += seg.x;
+        if ('y' in seg) y += seg.y;
+      }
+      // store the start of a subpath
+      if (c == 'M' || c == 'm') {
+        x0 = x;
+        y0 = y;
+      }
+    }
+    path.setAttribute('d', path.getAttribute('d').replace(/Z/g, 'z'));
+  }
+}
