@@ -81,5 +81,6 @@ function onSVG() {
         y0 = y;
       }
     }
+    path.setAttribute('d', path.getAttribute('d').replace(/z/g, 'Z'));
   }
 }
