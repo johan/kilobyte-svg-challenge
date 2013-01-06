@@ -1,0 +1,85 @@
+#! /usr/bin/env phantomjs
+
+var webpage = require('webpage')
+  , URL;
+  ;
+
+if (phantom.args.length < 1 || phantom.args.length > 1) {
+  console.log('Usage: svg2abs source.svg');
+  phantom.exit();
+}
+else {
+  URL = phantom.args[0];
+  load(URL, absolutize);
+}
+
+function load(url, fn) {
+  var page = webpage.create();
+  page.onConsoleMessage = function(msg) {
+    console.log(msg);
+  };
+  page.open(url, function (status) {
+    if (status !== 'success')
+      console.log('Unable to load ' + url);
+    else
+      fn(page);
+  });
+}
+
+function absolutize(page) {
+  page.onConsoleMessage = function(msg) {
+    console.log(msg);
+    phantom.exit();
+  };
+  page.evaluate(onSVG);
+}
+
+function onSVG() {
+  var svg = document.documentElement
+    , all = [].slice.call(document.querySelectorAll('path'), 0);
+  all.forEach(convertToAbsolute);
+  console.log((new XMLSerializer).serializeToString(svg));
+
+  // from: http://stackoverflow.com/a/9677915/1130377
+  function convertToAbsolute(path) {
+    function set(type) {
+      var args = [].slice.call(arguments, 1);
+      segs.replaceItem(path['createSVGPathSeg' + type].apply(path, args), i);
+    }
+    var x0, y0, x1, y1, x2, y2, segs = path.pathSegList;
+    for (var x = 0, y = 0, i = 0, len = segs.numberOfItems; i < len; i++) {
+      var seg = segs.getItem(i)
+        , c   = seg.pathSegTypeAsLetter;
+      if (/[MLHVCSQTA]/.test(c)) {
+        if ('x' in seg) x = seg.x;
+        if ('y' in seg) y = seg.y;
+      }
+      else {
+        if ('x1' in seg) x1 = seg.x1 + x;
+        if ('x2' in seg) x2 = seg.x2 + x;
+        if ('y1' in seg) y1 = seg.y1 + y;
+        if ('y2' in seg) y2 = seg.y2 + y;
+        if ('x'  in seg) x += seg.x;
+        if ('y'  in seg) y += seg.y;
+        switch (c) {
+          case 'm': set('MovetoAbs',x,y);                   break;
+          case 'l': set('LinetoAbs',x,y);                   break;
+          case 'h': set('LinetoHorizontalAbs',x);           break;
+          case 'v': set('LinetoVerticalAbs',y);             break;
+          case 'c': set('CurvetoCubicAbs',x,y,x1,y1,x2,y2); break;
+          case 's': set('CurvetoCubicSmoothAbs',x,y,x2,y2); break;
+          case 'q': set('CurvetoQuadraticAbs',x,y,x1,y1);   break;
+          case 't': set('CurvetoQuadraticSmoothAbs',x,y);   break;
+          case 'a': set('ArcAbs',x,y,seg.r1,seg.r2,seg.angle,
+                        seg.largeArcFlag,seg.sweepFlag);    break;
+          case 'z': case 'Z': x = x0; y = y0; break;
+        }
+      }
+      // store the start of a subpath
+      if (c == 'M' || c == 'm') {
+        x0 = x;
+        y0 = y;
+      }
+    }
+  }
+}
