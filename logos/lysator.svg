@@ -7,26 +7,26 @@
  <path d="m302.45 226.12c-4.406 0-4.772-2.569-1.102-4.771 3.672-2.204 6.242-3.672 2.938-4.773-3.305-1.101.734-3.671.734-3.671s17.99-.367 24.965-.367c7.171 0 77.563-1.468 84.807-1.468 6.243 0 24.965.367 24.965.367s2.204-.734 2.204 2.57c0 3.303-5.508 2.936-3.305 5.506 2.202 2.569-2.203 5.14-2.203 5.14"/>
  <path d="m436.45 224.65c-5.874 0-105 1.468-110.87 1.468"/>
  <path d="m378.81 292.2v-163.01s-1.102-2.57-4.039-1.835c-2.938.734-2.241-2.031-5.874-2.938-2.937-.734-4.773 3.305-4.773 3.305 0 6.617 1.103 151.26.735 159.7-.366 8.443.366 21.293.366 21.293s2.57.734 3.671-1.834c1.104-2.57 1.47-.735 3.305 2.201 1.836 2.938 2.202 4.039 4.038 2.938 1.836-1.102 2.569 0 2.569 0s0-15.421 0-19.826"/>
- <g font-family="Helvetica-Bold">
-  <text font-size="50.234" transform="matrix(-.221 -.9016 .9791 -.2036 113.01 336.63)">L</text>
-  <text font-size="50.233" transform="matrix(-.0479 -.9268 .9999 -.0157 105.67 279.35)">I</text>
-  <text font-size="50.23" transform="matrix(.1897 -.9083 .9709 .2393 106.9 238.4)">N</text>
-  <text font-size="50.232" transform="matrix(.3681 -.852 .9033 .429 126.23 176.56)">K</text>
-  <text font-size="50.234" transform="matrix(.5979 -.7101 .7415 .671 158.53 131.03)">Ö</text>
-  <text font-size="50.233" transform="matrix(.744 -.5552 .5691 .8223 207 88.445)">P</text>
-  <text font-size="50.231" transform="matrix(.8877 -.2715 .2585 .966 261.33 62.012)">I</text>
-  <text font-size="50.233" transform="matrix(.9278 -.0278 -.0052 1 304.65 52.464)">N</text>
-  <text font-size="50.231" transform="matrix(.8791 .2986 -.3551 .9348 362.66 53.2)">G</text>
-  <text font-size="50.23" transform="matrix(.2507 -.8932 .9524 .3047 560.18 352.05)">I</text>
-  <text font-size="50.232" transform="matrix(.9269 -.0313 -.00087031 1 316.39 521.69)">I</text>
-  <text font-size="50.231" transform="matrix(.898 .2315 -.2837 .9589 245.18 510.65)">N</text>
-  <text font-size="50.23" transform="matrix(.8347 .4058 -.4691 .8831 188.79 486.51)">U</text>
-  <text font-size="50.233" transform="matrix(.8988 -.2308 .2138 .9769 368.39 519.37)">V</text>
-  <text font-size="50.234" transform="matrix(.807 -.4585 .4628 .8865 432.29 497.97)">E</text>
-  <text font-size="50.23" transform="matrix(.6616 -.6512 .6755 .7373 485.28 462.92)">R</text>
-  <text font-size="50.23" transform="matrix(.4615 -.8054 .8489 .5285 532.27 410.05)">S</text>
-  <text font-size="50.233" transform="matrix(.0749 -.9254 .9933 .1158 573.61 302.68)">T</text>
-  <text font-size="50.234" transform="matrix(-.1639 -.9132 .99 -.1414 574.4 242.22)">Y</text>
+ <g font-family="Helvetica" font-weight="Bold" font-size="50.23">
+  <text transform="matrix(-.221 -.9016 .9791 -.2036 113.01 336.63)">L</text>
+  <text transform="matrix(-.0479 -.9268 .9999 -.0157 105.67 279.35)">I</text>
+  <text transform="matrix(.1897 -.9083 .9709 .2393 106.9 238.4)">N</text>
+  <text transform="matrix(.3681 -.852 .9033 .429 126.23 176.56)">K</text>
+  <text transform="matrix(.5979 -.7101 .7415 .671 158.53 131.03)">Ö</text>
+  <text transform="matrix(.744 -.5552 .5691 .8223 207 88.445)">P</text>
+  <text transform="matrix(.8877 -.2715 .2585 .966 261.33 62.012)">I</text>
+  <text transform="matrix(.9278 -.0278 -.0052 1 304.65 52.464)">N</text>
+  <text transform="matrix(.8791 .2986 -.3551 .9348 362.66 53.2)">G</text>
+  <text transform="matrix(.8347 .4058 -.4691 .8831 188.79 486.51)">U</text>
+  <text transform="matrix(.898 .2315 -.2837 .9589 245.18 510.65)">N</text>
+  <text transform="matrix(.9269 -.0313 -.0009 1 316.39 521.69)">I</text>
+  <text transform="matrix(.8988 -.2308 .2138 .9769 368.39 519.37)">V</text>
+  <text transform="matrix(.807 -.4585 .4628 .8865 432.29 497.97)">E</text>
+  <text transform="matrix(.6616 -.6512 .6755 .7373 485.28 462.92)">R</text>
+  <text transform="matrix(.4615 -.8054 .8489 .5285 532.27 410.05)">S</text>
+  <text transform="matrix(.2507 -.8932 .9524 .3047 560.18 352.05)">I</text>
+  <text transform="matrix(.0749 -.9254 .9933 .1158 573.61 302.68)">T</text>
+  <text transform="matrix(-.1639 -.9132 .99 -.1414 574.4 242.22)">Y</text>
  </g>
  <g fill="#000">
   <g id="L">
