@@ -14,7 +14,7 @@
  <use xlink:href="#e" fill="#e8779d" transform="rotate(180)"/>
  <use xlink:href="#e" fill="#67b8d9"/>
 
- <rect fill="#37100d" x="-110" y="-75" width="220" height="150"/>
+ <rect fill="#37100d" x="-70" y="-40" width="140" height="80"/>
 
  <use xlink:href="#a" fill="#3c2315"/>
  <use xlink:href="#a" fill="#4b1a18" transform="rotate(60)"/>
