@@ -19,17 +19,17 @@ L0-959A
 2e3 2e3 0 0 1 0-2299
 "/>
   <path id="b" _points="0-959 362-627 831-480 742-1286"
-        d="M0-959A
-2e3 2e3 0 0 1 362-627
-2e3 2e3 0 0 1 831-480
-2e3 2e3 0 0 0 742-1286
-2e3 2e3 0 0 0 0-959
+        d="M0-962
+L362-627A
+2e3 2e3 0 0 1 835-480
+2e3 2e3 0 0 0 748-1286
+2e3 2e3 0 0 0 0-962
 "/>
   <path id="a" _points="0-959 362-627 -362-627"
-        d="M0-959A
+        d="M0-965A
 2e3 2e3 0 0 1 362-627
-2e3 2e3 0 0 0 -362-627
-2e3 2e3 0 0 1 0-959
+2e3 2e3 0 0 0 -370-627
+2e3 2e3 0 0 1 0-965
 "/>
  </defs>
 
@@ -40,7 +40,7 @@ L0-959A
  <use xlink:href="#e" fill="#f4777c" transform="rotate(120)"/>
  <use xlink:href="#e" fill="#e8779d" transform="rotate(180)"/>
  <use xlink:href="#e" fill="#67b8d9"/>
- <rect fill="#37100d" x="-725" y="-660" width="1450" height="1320"/>
+ <rect fill="#37100d" x="-725" y="-666" width="1450" height="1332"/>
  <use xlink:href="#d" fill="#588b8d"/>
  <use xlink:href="#c" fill="#567a50"/>
  <use xlink:href="#b" fill="#533928"/>
