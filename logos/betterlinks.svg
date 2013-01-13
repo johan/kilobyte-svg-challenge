@@ -1,18 +1,17 @@
 <svg viewBox="-3160 -3340 6330 6680" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
-  <circle id="e" r="2e3" cy="-1340"/>
   <path id="d" d="M0-2299 742-1286A2e3 2e3 0 0 1 1991-1150 2e3 2e3 0 0 0 1522-2637 2e3 2e3 0 0 0 0-2299"/>
   <path id="c" d="M0-2299A2e3 2e3 0 0 1 742-1286
 L0-959A2e3 2e3 0 0 0 -742-1286 2e3 2e3 0 0 1 0-2299"/>
   <path id="b" d="M0-962 362-627A2e3 2e3 0 0 1 835-480 2e3 2e3 0 0 0 748-1286 2e3 2e3 0 0 0 0-962"/>
   <path id="a" d="M0-965A2e3 2e3 0 0 1 362-627 2e3 2e3 0 0 0 -370-627 2e3 2e3 0 0 1 0-965"/>
  </defs>
- <use xlink:href="#e" fill="#f8df92" transform="rotate(300)"/>
- <use xlink:href="#e" fill="#b99e89" transform="rotate(240)"/>
- <use xlink:href="#e" fill="#dbc2a6" transform="rotate(60)"/>
- <use xlink:href="#e" fill="#f4777c" transform="rotate(120)"/>
- <use xlink:href="#e" fill="#e8779d" transform="rotate(180)"/>
- <use xlink:href="#e" fill="#67b8d9"/>
+ <circle fill="#f8df92" r="2e3" cy="-670" cx="-1160"/>
+ <circle fill="#dbc2a6" r="2e3" cy="-670" cx="1160"/>
+ <circle fill="#b99e89" r="2e3" cy="670" cx="-1160"/>
+ <circle fill="#f4777c" r="2e3" cy="670" cx="1160"/>
+ <circle fill="#67b8d9" r="2e3" cy="-1340"/>
+ <circle fill="#e8779d" r="2e3" cy="1340"/>
  <rect fill="#37100d" x="-725" y="-666" width="1450" height="1332"/>
  <use xlink:href="#d" fill="#588b8d"/>
  <use xlink:href="#c" fill="#567a50"/>
