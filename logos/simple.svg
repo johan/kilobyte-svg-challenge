@@ -1,18 +1,21 @@
 <svg viewBox="-100 -100 666 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
-  <rect id="c" rx="70" ry="70" x="-64" y="-97" width="128" height="194" stroke-width="3"/>
+  <rect id="c" rx="70" ry="70" x="-64" y="-97" width="126" height="190" stroke-width="3"/>
+  <rect id="d" rx="70" ry="70" x="-64" y="-95" width="125" height="192" stroke-width="3"/>
   <use id="w" xlink:href="#c" fill="#fff"/>
+  <use id="W" xlink:href="#d" fill="#fff"/>
   <use id="g" xlink:href="#c" fill="none"/>
+  <use id="r" xlink:href="#d" fill="none"/>
  </defs>
- <use xlink:href="#w" transform="rotate(135)"/>
+ <use xlink:href="#W" transform="rotate(135)"/>
  <use xlink:href="#w" transform="rotate(-10)"/>
  <use xlink:href="#w" transform="rotate(27)"/>
- <use xlink:href="#w" transform="rotate(63)"/>
- <use xlink:href="#w" transform="rotate(99)"/>
- <use xlink:href="#g" stroke="#3a8495" transform="rotate(135)"/>
- <use xlink:href="#g" stroke="#ec9987" transform="rotate(-10)"/>
+ <use xlink:href="#W" transform="rotate(63)"/>
+ <use xlink:href="#W" transform="rotate(99)"/>
+ <use xlink:href="#r" stroke="#3a8495" transform="rotate(135)"/>
+ <use xlink:href="#g" stroke="#ec9987" transform="rotate(-9)"/>
  <use xlink:href="#g" stroke="#3a8495" transform="rotate(27)"/>
- <use xlink:href="#g" stroke="#e57860" transform="rotate(63)"/>
- <use xlink:href="#g" stroke="#629daa" transform="rotate(99)"/>
- <text fill="#333433" x="155.5" y="35.5" font-family="GothamMedium" font-size="97" letter-spacing="10">SIMPLE</text>
+ <use xlink:href="#r" stroke="#e57860" transform="rotate(63)"/>
+ <use xlink:href="#r" stroke="#629daa" transform="rotate(99)"/>
+ <text fill="#333433" x="153.9" y="33.8" font-family="GothamMedium" font-size="97" letter-spacing="12">SI<tspan dx="-.5">M</tspan><tspan dx="-.5">P</tspan><tspan dx="-4.5">L</tspan><tspan dx="-1.5">E</tspan></text>
 </svg>
