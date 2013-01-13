@@ -1,0 +1,8 @@
+<svg viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <rect id="g" rx="70" ry="70" x="-64" y="-97" width="128" height="194" fill="none" stroke-width="2"/>
+ <use xlink:href="#g" stroke="blue" transform="rotate(135)"/>
+ <use xlink:href="#g" stroke="red" transform="rotate(-10)"/>
+ <use xlink:href="#g" stroke="blue" transform="rotate(27)"/>
+ <use xlink:href="#g" stroke="red" transform="rotate(63)"/>
+ <use xlink:href="#g" stroke="blue" transform="rotate(99)"/>
+</svg>
