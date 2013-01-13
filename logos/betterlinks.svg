@@ -6,44 +6,48 @@
   <path id="d" d="m8.564-132.752c-2.966 1.712-5.816 3.547-8.562 5.484 19.979 14.093 34.042 33.873 41.247 55.829 22.617-4.738 46.778-2.449 68.973 7.807 0.304-3.345 0.468-6.731 0.468-10.156 0-27.459-10.003-52.579-26.558-71.925-25.031-4.665-51.787-0.768-75.568 12.961z"/>
   <circle id="e" r="110.6" cy="-73.9"/>
  </defs>
-
  <use xlink:href="#e" fill="#f8df92" transform="rotate(300)"/>
  <use xlink:href="#e" fill="#b99e89" transform="rotate(240)"/>
  <use xlink:href="#e" fill="#dbc2a6" transform="rotate(60)"/>
  <use xlink:href="#e" fill="#f4777c" transform="rotate(120)"/>
  <use xlink:href="#e" fill="#e8779d" transform="rotate(180)"/>
  <use xlink:href="#e" fill="#67b8d9"/>
-
  <rect fill="#37100d" x="-70" y="-40" width="140" height="80"/>
-
  <use xlink:href="#d" fill="#588b8d"/>
- <use xlink:href="#d" fill="#d25a51" transform="rotate(60)"/>
- <use xlink:href="#d" fill="#de374c" transform="rotate(120)"/>
- <use xlink:href="#d" fill="#a84954" transform="rotate(180)"/>
- <use xlink:href="#d" fill="#b48a4f" transform="rotate(240)"/>
- <use xlink:href="#d" fill="#64a17c" transform="rotate(300)"/>
-
  <use xlink:href="#c" fill="#567a50"/>
- <use xlink:href="#c" fill="#554145" transform="rotate(60)"/>
- <use xlink:href="#c" fill="#bf2a32" transform="rotate(120)"/>
- <use xlink:href="#c" fill="#a12229" transform="rotate(180)"/>
- <use xlink:href="#c" fill="#a34031" transform="rotate(240)"/>
- <use xlink:href="#c" fill="#486443" transform="rotate(300)"/>
-
  <use xlink:href="#b" fill="#533928"/>
- <use xlink:href="#b" fill="#4d1e2b" transform="rotate(60)"/>
- <use xlink:href="#b" fill="#8a1a1b" transform="rotate(120)"/>
- <use xlink:href="#b" fill="#9d1e18" transform="rotate(180)"/>
- <use xlink:href="#b" fill="#422e29" transform="rotate(240)"/>
- <use xlink:href="#b" fill="#3f4b2b" transform="rotate(300)"/>
-
  <use xlink:href="#a" fill="#3c2315"/>
- <use xlink:href="#a" fill="#4b1a18" transform="rotate(60)"/>
- <use xlink:href="#a" fill="#381317" transform="rotate(120)"/>
- <use xlink:href="#a" fill="#87170f" transform="rotate(180)"/>
- <use xlink:href="#a" fill="#3f1514" transform="rotate(240)"/>
- <use xlink:href="#a" fill="#38231b" transform="rotate(300)"/>
-
+ <g transform="rotate(60)">
+  <use xlink:href="#d" fill="#d25a51"/>
+  <use xlink:href="#c" fill="#554145"/>
+  <use xlink:href="#b" fill="#4d1e2b"/>
+  <use xlink:href="#a" fill="#4b1a18"/>
+ </g>
+ <g transform="rotate(120)">
+  <use xlink:href="#d" fill="#de374c"/>
+  <use xlink:href="#c" fill="#bf2a32"/>
+  <use xlink:href="#b" fill="#8a1a1b"/>
+  <use xlink:href="#a" fill="#381317"/>
+ </g>
+ <g transform="rotate(180)">
+  <use xlink:href="#d" fill="#a84954"/>
+  <use xlink:href="#c" fill="#a12229"/>
+  <use xlink:href="#b" fill="#9d1e18"/>
+  <use xlink:href="#a" fill="#87170f"/>
+ </g>
+ <g transform="rotate(240)">
+  <use xlink:href="#d" fill="#b48a4f"/>
+  <use xlink:href="#c" fill="#a34031"/>
+  <use xlink:href="#b" fill="#422e29"/>
+  <use xlink:href="#a" fill="#3f1514"/>
+ </g>
+ <g transform="rotate(300)">
+  <use xlink:href="#d" fill="#64a17c"/>
+  <use xlink:href="#c" fill="#486443"/>
+  <use xlink:href="#b" fill="#3f4b2b"/>
+  <use xlink:href="#a" fill="#38231b"/>
+ </g>
  <path id="l" fill="#fff" d="m31.2 .4 c 0,-11.08999995 -2.9525,-21.47499995 -8.0875,-30.47749995 -8.1775,2.085 -15.075,7.3975 -19.28,14.4825 2.275,4.865 3.5525,10.2774999 3.5525,15.99499995 0,20.86500005 -16.985,37.85500005 -37.8575,37.85500005 -20.875,0 -37.8575,-16.99 -37.8575,-37.85500005 0,-20.87999995 16.98,-37.86249995 37.8575,-37.86249995 1.5675,0 3.1075,0.1 4.6175,0.29 5.0875,-7.6475 11.6625,-14.2125 19.325,-19.2675 -7.365,-3.12 -15.46,-4.8425 -23.9425,-4.8425 -34.005,0 -61.675,27.665 -61.675,61.67999995 0,34.00750005 27.67,61.66250005 61.675,61.66250005 34.0075,0.002 61.6725,-27.6525 61.6725,-61.66000005 z"/>
  <use xlink:href="#l" transform="rotate(180 .2 .4)"/>
 </svg>
+
