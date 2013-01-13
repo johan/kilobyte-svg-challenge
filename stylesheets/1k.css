@@ -54,6 +54,6 @@ ul.svgs a:hover img, ul.svgs a:hover svg {
   width:      500%;
   height:     500%;
   margin:     -250% 0 0 -250%;
-  z-index:    2;
+  z-index:    1000;
   opacity:    1;
 }
