@@ -1,8 +1,19 @@
 <svg viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
- <rect id="g" rx="70" ry="70" x="-64" y="-97" width="128" height="194" fill="none" stroke-width="2"/>
- <use xlink:href="#g" stroke="blue" transform="rotate(135)"/>
- <use xlink:href="#g" stroke="red" transform="rotate(-10)"/>
- <use xlink:href="#g" stroke="blue" transform="rotate(27)"/>
- <use xlink:href="#g" stroke="red" transform="rotate(63)"/>
- <use xlink:href="#g" stroke="blue" transform="rotate(99)"/>
+ <!--rect x="-100" y="-100" width="200" height="200"/-->
+ <defs>
+  <rect id="c" rx="70" ry="70" x="-64" y="-97" width="128" height="194" stroke-width="2"/>
+  <use id="w" xlink:href="#c" fill="#fff"/>
+  <use id="g" xlink:href="#c" fill="none"/>
+ </defs>
+ <use xlink:href="#w" transform="rotate(135)"/>
+ <use xlink:href="#w" transform="rotate(-10)"/>
+ <use xlink:href="#w" transform="rotate(27)"/>
+ <use xlink:href="#w" transform="rotate(63)"/>
+ <use xlink:href="#w" transform="rotate(99)"/>
+ <use xlink:href="#g" stroke="#3a8495" transform="rotate(135)"/>
+ <use xlink:href="#g" stroke="#ec9987" transform="rotate(-10)"/>
+ <use xlink:href="#g" stroke="#3a8495" transform="rotate(27)"/>
+ <use xlink:href="#g" stroke="#e57860" transform="rotate(63)"/>
+ <use xlink:href="#g" stroke="#629daa" transform="rotate(99)"/>
+ <!-- #333433 SIMPLE -->
 </svg>
