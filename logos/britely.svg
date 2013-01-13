@@ -1,0 +1,18 @@
+<svg viewBox="0 0 1000 936" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <radialGradient id="f" gradientUnits="userSpaceOnUse" cy="438" cx="503" r="498">
+  <stop stop-color="#fff" stop-opacity=".6" offset=".64"/>
+  <stop stop-color="#fffaee" stop-opacity=".64" offset=".67"/>
+  <stop stop-color="#fff2cd" stop-opacity=".71" offset=".74"/>
+  <stop stop-color="#ffe698" stop-opacity=".82" offset=".83"/>
+  <stop stop-color="#fed848" stop-opacity=".94" offset=".95"/>
+  <stop stop-color="#fed208" offset="1"/>
+ </radialGradient>
+ <path fill="url(#f)" d="m2 391a500 500 1 1 0 996 0"/>
+ <circle fill="#fedb2f" cx="500" cy="508" r="230"/>
+ <g id="l">
+  <path fill="#4ec6f2" d="m297 619a230 230 0 0 1-177-422l306-174"/>
+  <path fill="#0795c5" d="m372 106 128 286-67 118a230 230 0 0 1-135.5 109 230 230 0 0 1-18.5-173"/>
+ </g>
+ <use xlink:href="#l" transform="matrix(-1 0 0 1 1e3 0)"/>
+ <path fill="#0a529e" d="m500 392 114-199.31a130 130 0 1 0-228 0"/>
+</svg>
