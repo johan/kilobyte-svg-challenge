@@ -1,0 +1,49 @@
+#! /usr/bin/env phantomjs
+// -*- js2 -*-
+
+var webpage = require('webpage')
+  , URL;
+  ;
+
+if (phantom.args.length < 1 || phantom.args.length > 1) {
+  console.log('Usage: svg-reverse-paths source.svg');
+  phantom.exit();
+}
+else {
+  URL = phantom.args[0];
+  load(URL, onload);
+}
+
+function load(url, fn) {
+  var page = webpage.create();
+  page.onConsoleMessage = function(msg) {
+    console.log(msg);
+  };
+  page.open(url, function (status) {
+    if (status !== 'success')
+      console.log('Unable to load ' + url);
+    else
+      fn(page);
+  });
+}
+
+function onload(page) {
+  page.onConsoleMessage = function(msg) {
+    console.log(msg);
+    phantom.exit();
+  };
+  page.evaluate(onSVG);
+}
+
+function onSVG() {
+  var svg = document.documentElement
+    , all = [].slice.call(document.querySelectorAll('path'), 0);
+  all.forEach(convertToRelative);
+  console.log((new XMLSerializer).serializeToString(svg));
+
+  // slice in http://pomax.nihongoresources.com/downloads/temp/svgreversal/ here
+  function reversePath(path) {
+    // path.setAttribute('d', path.getAttribute('d'));
+  }
+}
+
