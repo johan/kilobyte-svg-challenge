@@ -45,11 +45,16 @@ function onSVG() {
 
   // Move the top/left coordinate of the viewBox to x, y (0, 0 by default), and
   // updates all shape elements accordingly, to retain their original position.
+  // Retains full precision from the coordinates the original file amounted to.
   // NOTE: Does not handle transforms right, or accommodate non-shape elements!
   function moveViewBox(x, y) {
-    var viewBox = document.documentElement.viewBox.baseVal
-      , dx      = (x = x || 0) - viewBox.x
-      , dy      = (y = y || 0) - viewBox.y
+    var svg     = document.documentElement
+      , viewBox = svg.getAttribute('viewBox')
+      , coords  = viewBox.match(/[+-]?(?:\.\d+|\d+(?:\.\d+)?)/g)
+      , dx      = sub(x = x || '0', coords[0])
+      , dy      = sub(y = y || '0', coords[1])
+      , prec_x  = Math.max(prec(x), prec(coords[0]))
+      , prec_y  = Math.max(prec(y), prec(coords[1]))
       , move    =
         { path:     path
         , rect:     xy
@@ -65,8 +70,47 @@ function onSVG() {
     for (elem in move)
       array(document.querySelectorAll(elem)).forEach(move[elem]);
 
-    viewBox.x = x;
-    viewBox.y = y;
+    coords = coords.slice(0, 2).map(dxdy).concat(coords.slice(2));
+    svg.setAttribute('viewBox', coords.join(' '));
+
+    // edits coord i&1 = 0 by dx steps, coord i&1 = 1 by dy steps
+    function dxdy(n, i) {
+      return n & 1 ? add(n, dy, prec_y) : add(n, dx, prec_x);
+    }
+
+    // add n and m (strings), retaining the maximum precision of n and m
+    // (if m is a Number, p is its number of precision decimals)
+    function add(n, m, p) { return op(function(a,b) { return a+b; }, n, m, p); }
+    function sub(n, m, p) { return op(function(a,b) { return a-b; }, n, m, p); }
+    function op(op, n, m, p) {
+      if (typeof n !== 'string')
+        throw new Error('n='+ n +' not a string! Needed to retain precision.');
+      if (typeof m === 'string') {
+        p = prec(m);
+        m = parseFloat(m);
+      }
+      p = Math.max(p, prec(n));
+      n = parseFloat(n);
+      n = op(n, m).toFixed(p).replace(/\.0*$/, ''); // zap excess decimals
+      var z = /(.*[1-9])(0{3,})$/.exec(n);
+      if (z) n = z[1] +'e'+ z[2].length;
+      return n.replace(/^0\./, '.') // >0 but <1 needs no leading zero
+              .replace(/(\.\d*[1-9])0*$/, '$1'); // no trailing zeroes
+    }
+
+    // returns the number of decimals of n (string only)
+    function prec(n) {
+      var t = typeof n;
+      if (t !== 'string')
+        throw new Error('Only strings retain their precision; got '+ t +'!');
+      n = /\.(\d*)/.exec(n);
+      if (!n) return 0;
+      return n[1].length;
+    }
+
+    function edit(me, prop) {
+
+    }
 
     function path(p) {
       convertToRelative(p);
