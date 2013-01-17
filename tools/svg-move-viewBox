@@ -112,11 +112,48 @@ function onSVG() {
 
     }
 
+    // lexes an SVG path d attribute into an array of all its raw cmd|num string
+    // components - stripping all whitespace as it goes along, while not parsing
+    // the actual numbers(, which would lose their precision!)
+    // `max`, if given, only does the first `max` steps
+    function lexd(d, max) {
+      var re = lex.re, segs = [], m, c, n;
+      re.lastIndex = 0;
+      max = max || Infinity;
+      while ((m = re.exec(d, re.lastIndex)) &&
+             ((c = m[1]).length + (n = m[2]).length) &&
+             max--) {
+        if ((c = c.replace(/[^a-z]/gi, '')))
+          segs.push(c); // adds just the cmd
+        if (n)
+          segs.push(n); // adds just the num - if there was one; z won't have it
+      }
+      return segs;
+    }
+    lexd.re = /([a-z\s,]*)([-+]?(?:\d+|)(?:\.\d+)?(?:e[-+]?\d+(?:\.\d+))?)/gi;
+
+    // get the `n`th number in path (sub)string `s`, as a string
+    function numn(s, n) {
+      var x; n = n || 0;
+      while (n-- >= 0) {
+        if ((x = numn.re.exec(s))) {
+          s = x[2];
+          x = x[1];
+        }
+      }
+      return x;
+    }
+    numn.re = /^[,\sa-z]*([-+]?(?:\d+|)(?:\.\d+)?(?:e[-+]?\d+(?:\.\d+))?)(.*)/i;
+
     function path(p) {
+      var d = p.getAttribute('d')
+        , D = lexd(d, 2) // M, X, Y
+        , x = sub(D[1], dx)
+        , y = sub(D[2], dy)
+        ;
       convertToRelative(p);
-      var c = p.pathSegList.getItem(0);
-      c.x += dx;
-      c.y += dy;
+      p.pathSegList.removeItem(0);
+      p.setAttribute('d', 'm'+ x +' '+ y + p.getAttribute('d'));
     }
     function xy(e) {
       var x = parseFloat(e.getAttribute('x') || '0')
