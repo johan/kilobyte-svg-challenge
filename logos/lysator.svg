@@ -14,7 +14,7 @@
  <path d="m330 349h33a19 19 0 0 1 5 36l12 24h-11l-9-18c-5-6 -5 -6 -19 -6v24h-11m11-35h20a7 7 0 0 0 0 -14h-20"/>
  <ellipse stroke="#ff0" transform="rotate(20 307 230)" rx="26" ry="49" cx="307" cy="230" stroke-width="15"/>
  <g fill="#ff0">
-  <text font-family="Helvetica" font-weight="Bold" font-size="50.23">
+  <text font-family="Helvetica" font-weight="bold" font-size="50.23">
    <textPath xlink:href="#l" letter-spacing="26">LINKÖPING</textPath>
    <textPath xlink:href="#u" letter-spacing="29">UNIVERSITY</textPath>
   </text>
