@@ -52,8 +52,8 @@ function onSVG() {
       , dy      = (y = y || 0) - viewBox.y
       , move    =
         { path:     path
-        , rect:     x1y1
-        , line:     x2y2
+        , rect:     xy
+        , line:     xnyn
         , circle:   cxcy
         , ellipse:  cxcy
         , polygon:  pnts
@@ -74,18 +74,21 @@ function onSVG() {
       c.x += dx;
       c.y += dy;
     }
-    function x1y1(e) {
-      var x1 = parseFloat(e.getAttribute('x1') || '0')
-        , y1 = parseFloat(e.getAttribute('y1') || '0');
-      e.setAttribute('x1', x1 + dx);
-      e.setAttribute('y1', y1 + dy);
+    function xy(e) {
+      var x = parseFloat(e.getAttribute('x') || '0')
+        , y = parseFloat(e.getAttribute('y') || '0');
+      e.setAttribute('x', x + dx);
+      e.setAttribute('y', y + dy);
     }
-    function x2y2(l) {
-      x1y1(l);
-      var x2 = parseFloat(c.getAttribute('x2') || '0')
+    function xnyn(l) {
+      var x1 = parseFloat(e.getAttribute('x1') || '0')
+        , x2 = parseFloat(c.getAttribute('x2') || '0')
+        , y1 = parseFloat(e.getAttribute('y1') || '0')
         , y2 = parseFloat(c.getAttribute('y2') || '0');
-      c.setAttribute('x2', x2 + dx);
-      c.setAttribute('y2', y2 + dy);
+      l.setAttribute('x1', x1 + dx);
+      l.setAttribute('x2', x2 + dx);
+      l.setAttribute('y1', y1 + dy);
+      l.setAttribute('y2', y2 + dy);
     }
     function cxcy(c) {
       var cx = parseFloat(c.getAttribute('cx') || '0')

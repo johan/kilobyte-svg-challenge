@@ -1,0 +1,24 @@
+<svg viewBox="0 0 534 534" fill="#ff0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <path id="l" d="m67 336A211 211 0 0 1 395 99"/>
+  <path id="u" d="m183 502A250 250 0 0 0 452 99"/>
+ </defs>
+ <circle r="267" cy="267" cx="267" fill="#000"/>
+ <path d="m93 435v-15a35 35 0 0 0 35-35v-235a50 50 0 0 1 50-50h262v15a35 35 0 0 0 -35 35v235a50 50 0 0 1 -50 50m49-320h-140a35 35 0 0 0 -35 35v156a15 30 10 0 1 -15 30h140a35 35 0 0 0 35-35v-156a15 30 10 0 1 15-30"/>
+ <text font-family="Helvetica" font-weight="Bold" font-size="50.23">
+  <textPath xlink:href="#l" letter-spacing="26">LINKÖPING</textPath>
+  <textPath xlink:href="#u" letter-spacing="29">UNIVERSITY</textPath>
+ </text>
+ <g fill="#000">
+  <path d="m154 130h11v49h39v11h-50"/>
+  <path d="m154 204h11l14 24 14-24h11l-19.5 33.775v26.225h-11v-26.225z"/>
+  <path d="m154 319a17 17 0 0 0 17 17h15a18 18 0 0 0 0 -36h-14.5a6.5 6.5 0 0 1 0-13h15.5a6 6 0 0 1 6 6h11a17 17 0 0 0-17-17h-15.5a17.5 17.5 0 0 0 0 35h14.5a7 7 0 0 1 0 14h-15a6 6 0 0 1-6-6"/>
+  <path d="m154 409h11v-24h28v24h11v-43a17 17 0 0 0-17-17h-16a17 17 0 0 0-17 17m11 8v-8a6 6 0 0 1 6-6h16a6 6 0 0 1 6 6v8"/>
+  <path d="m232 360h-19.5v-11h50v11h-19.5v49h-11"/>
+  <path d="m330 349h33a19 19 0 0 1 5 36l12 24h-11l-9-18c-5-6 -5 -6 -19 -6v24h-11m11-35h20a7 7 0 0 0 0 -14h-20"/>
+  <ellipse stroke="#ff0" transform="rotate(20 307 230)" rx="26" ry="49" cx="307" cy="230" stroke-width="15"/>
+ </g>
+ <rect stroke="#000" stroke-width="11" rx="11" ry="11" x="275" y="354.5" width="39" height="49"/>
+ <path d="m241 236c-4 0-5-3-1-5 4-2 6 -4 3 -5-3-1 1-4 1-4h135s2-1 2 3c0 3-6 3-3 6 2 3-2 5-2 5"/>
+ <path d="m317 135s-1-3-4-2c-3 1-2-2-6-3-3-1-5 3-5 3v181s3 1 4 -2c1-3 1-1 3 2 2 3 2 4 4 3 2-1 3 0 4 0"/>
+</svg>
