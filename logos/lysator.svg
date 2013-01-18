@@ -1,13 +1,13 @@
 <svg viewBox="0 0 534 534" fill="#ff0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
-  <path id="l" d="m68 338A211 211 0 0 1 395 99"/>
-  <path id="u" d="m143 485A250 250 0 0 0 452 99"/>
+  <path id="l" d="m67 336A211 211 0 0 1 395 99"/>
+  <path id="u" d="m183 502A250 250 0 0 0 452 99"/>
  </defs>
  <circle r="267" cy="267" cx="267" fill="#000"/>
  <path d="m93 435v-15a35 35 0 0 0 35-35v-235a50 50 0 0 1 50-50h262v15a35 35 0 0 0 -35 35v235a50 50 0 0 1 -50 50m49-320h-140a35 35 0 0 0 -35 35v156a15 30 10 0 1 -15 30h140a35 35 0 0 0 35-35v-156a15 30 10 0 1 15-30"/>
  <text font-family="Helvetica" font-weight="Bold" font-size="50.23">
   <textPath xlink:href="#l" letter-spacing="26">LINKÖPING</textPath>
-  <textPath xlink:href="#u" letter-spacing="30">UNIVERSITY</textPath>
+  <textPath xlink:href="#u" letter-spacing="29">UNIVERSITY</textPath>
  </text>
  <g fill="#000">
   <path d="m154 130h11v49h39v11h-50"/>
