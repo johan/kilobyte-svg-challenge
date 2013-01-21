@@ -77,7 +77,7 @@ Q.when(getJSON("#{HOST}#{CLOSED}")).then (closed) ->
 
   li = (svg) ->
     path = svg.path
-    desc = svg.desc.replace(/^Corrected |: \d+ byte.*/gi, '')
+    desc = svg.desc.replace(/^Corrected |:[^:]*$/gi, '')
     what = "#{desc}: #{svg.size} bytes".replace /\x27/g, '&apos;'
     is_1k = if svg.size <= 1024 then 'onek' else 'more'
     "<li class='#{is_1k}'><a title='#{what}' href='#{path}'>#{svg.img}</a></li>"
