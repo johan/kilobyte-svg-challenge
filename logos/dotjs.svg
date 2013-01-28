@@ -1,5 +1,5 @@
 <svg viewBox="2 2 25 29" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
- <path id="x" d="m23.043 4.649l-.404-2.312-1.59 1.727-2.323-.330 1.151 2.045-1.032 2.108 2.302-.463 1.686 1.633.271-2.332 2.074-1.099-2.135-.977z"/>
+ <path id="x" d="m23 2-1.59 1.727-2.323-.330 1.151 2.045-1.032 2.108 2.302-.463 1.686 1.633.271-2.332 2.074-1.099-2.135-.977"/>
  <use xlink:href="#x" transform="matrix(.4-.06.06.4-3 6)"/>
  <use xlink:href="#x" transform="matrix(.6.02-.02.6 14 15)"/>
  <use xlink:href="#x" transform="matrix(.5.4-.4.5 2.5-3)"/>
