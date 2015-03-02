@@ -1,16 +1,17 @@
 #! /usr/bin/env phantomjs
 // -*- js2 -*-
 
+var system = require('system');
 var webpage = require('webpage')
   , URL;
   ;
 
-if (phantom.args.length < 1 || phantom.args.length > 1) {
+if (system.args.length != 2) {
   console.log('Usage: svg-move-viewBox source.svg');
   phantom.exit();
 }
 else {
-  URL = phantom.args[0];
+  URL = system.args[1];
   load(URL, onload);
 }
 
