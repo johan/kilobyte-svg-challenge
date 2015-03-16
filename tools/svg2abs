@@ -1,4 +1,5 @@
 #! /usr/bin/env phantomjs
+// -*- js2 -*-
 
 var system = require('system');
 var webpage = require('webpage')
