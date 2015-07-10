@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Drawn from scratch, based on coderwall.png from https://assembly.com/coderwall/assets -->
+<svg version="1.1" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+<circle cx="30" cy="30" r="30" fill="#3e8dcc"/>
+<circle cx="150" cy="30" r="30" fill="#3e8dcc"/>
+<circle cx="270" cy="30" r="30" fill="#3e8dcc"/>
+<circle cx="150" cy="150" r="30" fill="#3e8dcc"/>
+<circle cx="270" cy="150" r="30" fill="#3e8dcc"/>
+<circle cx="270" cy="270" r="30" fill="#3e8dcc"/>
+</svg>
