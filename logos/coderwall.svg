@@ -1,8 +1,10 @@
 <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-	<circle cx="3" cy="3" r="3" fill="#3e8dcc"/>
-	<circle cx="15" cy="3" r="3" fill="#3e8dcc"/>
-	<circle cx="27" cy="3" r="3" fill="#3e8dcc"/>
-	<circle cx="15" cy="15" r="3" fill="#3e8dcc"/>
-	<circle cx="27" cy="15" r="3" fill="#3e8dcc"/>
-	<circle cx="27" cy="27" r="3" fill="#3e8dcc"/>
+	<g fill="#3e8dcc">
+		<circle cx="3" cy="3" r="3"/>
+		<circle cx="15" cy="3" r="3"/>
+		<circle cx="27" cy="3" r="3"/>
+		<circle cx="15" cy="15" r="3"/>
+		<circle cx="27" cy="15" r="3"/>
+		<circle cx="27" cy="27" r="3"/>
+	</g>
 </svg>
