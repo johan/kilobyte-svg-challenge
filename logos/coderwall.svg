@@ -1,10 +1,10 @@
-<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
 	<g fill="#3e8dcc">
-		<circle cx="3" cy="3" r="3"/>
-		<circle cx="15" cy="3" r="3"/>
-		<circle cx="27" cy="3" r="3"/>
-		<circle cx="15" cy="15" r="3"/>
-		<circle cx="27" cy="15" r="3"/>
-		<circle cx="27" cy="27" r="3"/>
+		<circle cx="1" cy="1" r="1"/>
+		<circle cx="5" cy="1" r="1"/>
+		<circle cx="9" cy="1" r="1"/>
+		<circle cx="5" cy="5" r="1"/>
+		<circle cx="9" cy="5" r="1"/>
+		<circle cx="9" cy="9" r="1"/>
 	</g>
 </svg>
