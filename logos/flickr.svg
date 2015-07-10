@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg version="1.1" viewBox="0 0 250 126" xmlns="http://www.w3.org/2000/svg">
-<!-- Drawn from scratch -->
-<circle cx="63" cy="63" r="51.5" fill="#0063DC"/>
-<circle cx="187" cy="63" r="51.5" fill="#FF0084"/>
+<svg viewBox="0 0 250 126" xmlns="http://www.w3.org/2000/svg">
+	<circle cx="63" cy="63" r="51.5" fill="#0063DC"/>
+	<circle cx="187" cy="63" r="51.5" fill="#FF0084"/>
 </svg>
